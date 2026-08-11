@@ -56,31 +56,67 @@ print(fr)
 
 # 10 Convert a list with duplicate values into a set to remove duplicates.
 
-
+l1 = [1,2,3,4,5,6,1,2,3]
+s1 = set(l1)
+print(s1)
 
 # 11 Create a dictionary storing student names and marks.
 
+dic = {
+    "riddhesh" : 36,
+    "parth" : 46,
+    "pratham" : 56 
+}
 
+print(dic)  
 
 # 12 Add a new key-value pair to an existing dictionary.
 
-
+dic.update({"shrey" : 45})
+print(dic)
 
 # 13 Delete a key-value pair from a dictionary.
 
-
+dic.pop("parth")
+print(dic)
 
 # 14 Merge two dictionaries into one.
 
-
+dic = {
+    "riddhesh" : 36,
+    "parth" : 46,
+    "pratham" : 56 
+}
+dic2 = {"student1" : 65,
+        "student2" : 54}
+dic.update(dic2)
+print(dic)
 
 # 15 Check if a key exists in a dictionary.
 
+dic = {
+    "riddhesh" : 36,
+    "parth" : 46,
+    "pratham" : 56 
+}
 
+if "riddhesh" in dic:
+    print("key is exists in dictionary")
+else:
+    print("key is not exists in dictionary")
 
 # 16 Count word frequency in a given string using a dictionary.
 
+words = "dog cat dog cat dog cat rabbit rabbit"
+w1 = words.split()
+co = {}
 
+for word in w1:
+    if word in co:
+        co[word]=co[word]+1
+    else:
+        co[word]=1
+print(co)
 
 # 17 Find the key with the maximum value in a dictionary.
 
