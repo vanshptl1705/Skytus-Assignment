@@ -120,14 +120,43 @@ print(co)
 
 # 17 Find the key with the maximum value in a dictionary.
 
+dic = {
+    "riddhesh" : 36,
+    "parth" : 46,
+    "pratham" : 56 
+}
+k = list(dic.keys())
+v = list(dic.values())
 
+print("key with the maximum value in a dictionary is", k[v.index(max(v))])
 
 # 18 Reverse keys and values in a dictionary.
 
+dic = {
+    "riddhesh" : 36,
+    "parth" : 46,
+    "pratham" : 56 
+}
+newDic = {}
 
+for r in dic:
+    newDic[dic[r]] = r
+
+print(newDic)
+    
 
 # 19 Update the value for a specific key.
 
-
+dic = {
+    "riddhesh" : 36,
+    "parth" : 46,
+    "pratham" : 56 
+}
+dic["parth"] = 70
+print(dic)
 
 # 20 Convert a list of tuples into a dictionary.
+
+tup = (("a" , "red"),("b","blue"),("c","black"))
+d = dict(tup)
+print(d)
