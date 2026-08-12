@@ -1,4 +1,4 @@
-# # 1. Function to check if a number is prime.
+# 1. Function to check if a number is prime.
 
 def prime(num):
     count = 0
