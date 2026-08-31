@@ -78,32 +78,23 @@ c1.Circle(5)
 c1.Main(5)
 
 # 5. Create a polymorphic function that works with different shapes.
-
-class Shape:
-    def area(self):
-        print("Area of Shape:")
         
-class Circle(Shape):
+class Circle():
     def area(self):
         r = int(input("Please enter the radius of Circle:"))
         print("Area of Circle is",3.14 * r * r)
 
-
-class Rectangle(Shape):
+class Rectangle():
     def area(self):
         l = int(input("Please enter the Length of Rectangle:"))
         w = int(input("Please enter the Width of Rectangle:"))
         print("Area of Rectangle is",l * w)
 
-
-class Triangle(Shape):
+class Triangle():
     def area(self):
         b = int(input("Please enter the Base of Triangle:"))
         h = int(input("Please enter the Height of Triangle:"))
         print("Area of Triangle is",0.5 * b * h)
-
-s1 = Shape()
-s1.area()
 
 c1 = Circle()
 c1.area()
