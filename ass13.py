@@ -58,7 +58,6 @@ product = {
        "Keyboard":1500,
 }
 
-
 cart = {}
 
 while True:
@@ -190,4 +189,78 @@ while True:
        
        elif act == 5:
               act5()
+              break
+
+# To-do-list
+
+task = []
+
+while True:
+       def main():
+              print("\n""---------------------------")
+              print("        To-Do List")
+              print("---------------------------""\n")
+              print("1. Add Task")
+              print("2. View Task")
+              print("3. Edit Task")
+              print("4. Delete Task")
+              print("5. Exit")
+
+       main()
+       user = int(input("Please enter your choice:"))
+
+       def act1():
+              print("\n--------Add Task--------\n")
+       
+       
+              l1 = int(input("how many task you needed to add:\n"))
+       
+              for a in range(l1):
+                     t1 = input("Please enter Task here:")
+                     task.append(t1)
+
+       def act2():
+              print("\n--------View Task--------\n")
+              
+              for i in task:
+                     print(i)
+       
+       def act3():
+              print("\n--------Edit Task--------\n")
+              
+              e1 = input("Which task you want to change:")
+              
+              if e1 in task:
+                     task.remove(e1)
+                     print("Task:",e1,"\n")
+                     e2 = input("Change task here:")  
+                     task.append(e2)
+                     print(e2,"Task Successfully changed!!!")  
+              else:
+                     print(e1, "Task Doesn't Exist")
+       
+       def act4():
+              print("\n--------Delete Task--------\n")
+              
+              d1 = input("Which task you want to delete:")
+              
+              if d1 in task:
+                     task.remove(d1)
+                     print(d1, "Task deleted sucessfully!")
+              else:
+                     print(d1, "Task Doesn't Exist")
+                     
+       if user == 1:
+              act1()
+       
+       if user == 2:
+              act2()
+
+       if user == 3:
+              act3()
+       
+       if user == 4:
+              act4()
+       
+       if user == 5:
               break
