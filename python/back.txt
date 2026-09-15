@@ -1,0 +1,6 @@
+Python is a high-level, interpreted programming language.
+It is easy to learn because its syntax is simple and readable.
+Python is an open-source and cross-platform language.
+Python has many useful built-in libraries and frameworks.
+it Popular frameworks include Django, Flask, and FastAPI.
+Python was created by Guido van Rossum.
